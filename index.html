@@ -655,7 +655,7 @@ function exportXLSX() {
 /* ─── SIMPLER APPROACH: Google Apps Script Web App relay ─── */
 /* The user deploys a 1-line Apps Script that accepts a POST with
    the file data and saves it to their Drive. No OAuth needed.   */
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbxpp7zcXtlcVvcONCIPFGrNAecUhdFc1jGHwpW_niqqaMwA9FR5SeUtzNsRlOXQgLOSEw/exec'; // <-- User pastes their Apps Script Web App URL here (see instructions below)
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbyDaUbWaxpSTLJ-z_KnXzbFnokJGcz_q0cp5AElM4AL8TF5LA_aegUNNA_UuwDpZJjDsg/exec'; // <-- User pastes their Apps Script Web App URL here (see instructions below)
 
 async function uploadXLSXtoDrive() {
   if (!expenses.length) { toast('⚠️ No data to export', 'err'); return; }
